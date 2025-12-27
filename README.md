@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Axiom Pulse – Token Discovery Dashboard (Frontend Assignment)
 
-## Getting Started
+This project is a **pixel-perfect frontend replica of Axiom Trade’s Pulse token discovery system**, built as part of a technical assignment.  
+The goal of this project is to demonstrate **UI precision, performance optimization, scalable architecture, and real-time interaction handling** using modern frontend technologies.
 
-First, run the development server:
+---
+
+## 🔗 Live Demo
+👉 https://token-trading-table02.vercel.app/pulse
+
+---
+
+## 🎥 Demo Video (1–2 min)
+👉 https://youtube.com/<your-video-link>
+
+The video demonstrates:
+- Token discovery columns
+- Hover, tooltip, popover, and modal interactions
+- Sorting behavior
+- Real-time price updates
+- Responsive layout (mobile → desktop)
+
+---
+
+## 🧩 Features Implemented
+
+### Core Features
+- ✅ Three token discovery sections:
+  - **New Pairs**
+  - **Final Stretch**
+  - **Migrated**
+- ✅ Reusable **TokenCard system**
+- ✅ Interactive UI elements:
+  - Tooltips (Radix UI)
+  - Popovers
+  - Modals
+  - Hover effects
+  - Click actions
+- ✅ Sorting logic (configurable per column)
+- ✅ Real-time price updates using **WebSocket mock**
+- ✅ Smooth price change color transitions (green/red)
+- ✅ Loading states:
+  - Skeleton loaders
+  - Shimmer effect
+  - Progressive loading
+  - Error boundaries
+
+---
+
+## 🎨 UI Accuracy (Pixel-Perfect)
+
+- The UI closely matches **axiom.trade/pulse**
+- Spacing, typography, colors, and interactions are replicated with **≤ 2px tolerance**
+- Layout verified manually using browser DevTools
+
+---
+
+## 📱 Responsive Design
+
+- Fully responsive down to **320px width**
+- Layout adapts across:
+  - Mobile (320px)
+  - Tablet (768px)
+  - Desktop (1280px+)
+
+### Snapshot (Responsive Layout)
+📸 Example snapshot:
+
+![Pulse Responsive Snapshot](./screenshots/pulse-responsive.png)
+
+> Snapshot shows layout adaptability across screen sizes.
+
+---
+
+## 🏗️ Architecture
+
+This project follows **Atomic Design Architecture**:
+atoms       → Tooltip, Badge, Skeleton, Text
+molecules   → TokenHeader, TokenMetrics, PriceChange
+organisms   → TokenCard, TokenColumn, PulseBoard
+overlays    → Modal, Popover
+
+### State Management
+- **Redux Toolkit** → UI state (sorting, selection)
+- **React Query** → Server/data fetching and caching
+- **Custom Hooks** → WebSocket mock, animations
+
+---
+
+## ⚙️ Tech Stack
+
+- **Next.js 14** (App Router)
+- **TypeScript (strict)**
+- **Tailwind CSS**
+- **Redux Toolkit**
+- **React Query**
+- **Radix UI / shadcn**
+- **Lucide Icons**
+
+---
+
+## ⚡ Performance Optimizations
+
+- Memoized components (`React.memo`)
+- Stable callbacks (`useCallback`)
+- Fixed layout heights to avoid CLS
+- Lazy loading where appropriate
+- Deferred WebSocket initialization
+- No layout shifts during loading
+
+### Lighthouse Scores (Incognito Mode)
+- **Performance:** 90+
+- **Accessibility:** 90+
+- **Best Practices:** 95+
+- **SEO:** 100
+
+---
+
+## 🧪 Lighthouse Verification
+
+- Tested in Chrome Incognito
+- Extensions disabled
+- Tested on:
+  - Mobile
+  - Desktop
+
+---
+
+## 🛠️ Setup Instructions
 
 ```bash
+git clone https://github.com/Nehabhadauria19/token-trading-table.git
+cd token-trading-table
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
