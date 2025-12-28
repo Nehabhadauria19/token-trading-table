@@ -11,7 +11,7 @@ The goal of this project is to demonstrate **UI precision, performance optimizat
 ---
 
 ## 🎥 Demo Video (1–2 min)
-👉 https://youtube.com/<your-video-link>
+👉 https://www.youtube.com/watch?v=22R8fzzHEzU
 
 The video demonstrates:
 - Token discovery columns
@@ -66,11 +66,8 @@ The video demonstrates:
 ### Snapshot (Responsive Layout)
 📸 Example snapshot:
 
-![Pulse Responsive Snapshot](./screenshots/pulse-responsive.png)
+<img width="1505" height="794" alt="Screenshot 2025-12-27 at 6 28 15 PM" src="https://github.com/user-attachments/assets/82b1ce9f-9135-4353-8773-af84953c296b" />
 
-> Snapshot shows layout adaptability across screen sizes.
-
----
 
 ## 🏗️ Architecture
 
